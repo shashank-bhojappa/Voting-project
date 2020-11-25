@@ -1,0 +1,16 @@
+{% extends "poll/base.html" %}
+
+{% block title %}Loginpage{% endblock %}
+
+{% block main %}
+<h2>Login</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Login">
+</form>
+
+<a href="{% url 'home' %}">Back to home</a>
+
+{% endblock %}

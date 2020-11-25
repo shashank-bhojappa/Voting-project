@@ -1,0 +1,1 @@
+1. Defining a function inside a model (total field inside Poll model in this app example)
